@@ -40,8 +40,8 @@ _items.push(_Moon);
 //var _motionShattle = new GravityMotion(new Vector(13, -17.439), _items);
 //var _motionShattle = new GravityMotion(new Vector(13, -17.43900001), _items);
 //12.77, 17.641281990048
-var vx = Number.parseFloat(vxInput.value);
-var vy = -Number.parseFloat(vyInput.value);
+var vx = parseFloat(vxInput.value);
+var vy = -.parseFloat(vyInput.value);
 
 var _motionShattle = new GravityMotion(new Vector(vx, vy), _items);
 var _shattle = new Item('#AAAAAA', new Point(600, 390), _motionShattle, 0, 3); 
