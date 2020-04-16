@@ -5,19 +5,19 @@ var height = canvas.height = window.innerHeight;
 
 var _items = [];
 
-var y = 200 * Math.sqrt(3) + 50;
+var y = 200 * Math.sqrt(3) + 200;
 var v = 0.92;
 
 var _motion1 = new GravityMotion(new Vector(-2 * v, 0.1), _items);
-var _item1 = new Item('#00FF00', new Point(400, 50), _motion1, 1700, 10);
+var _item1 = new Item('#00FF00', new Point(600, 200), _motion1, 1700, 10);
 _items.push(_item1);
 
 var _motion2 = new GravityMotion(new Vector(v, v * Math.sqrt(3)), _items);
-var _item2 = new Item('#888888', new Point(200, y), _motion2, 1700, 10);
+var _item2 = new Item('#888888', new Point(400, y), _motion2, 1700, 10);
 _items.push(_item2);
 
 var _motion3 = new GravityMotion(new Vector(v, -v * Math.sqrt(3)), _items);
-var _item3 = new Item('#0000FF', new Point(600, y), _motion3, 1700, 10); 
+var _item3 = new Item('#0000FF', new Point(800, y), _motion3, 1700, 10); 
 _items.push(_item3);
 
 function drawItem(item) {
